@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 219, 203);
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.gridcontainer {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    'header header header header header header'
+    'intro-section intro-section intro-section intro-section intro-section intro-section'
+    'organic-section organic-section organic-section organic-section organic-section organic-section'
+    'story-section story-section story-section story-section story-section story-section'
+    'newsletter newsletter newsletter newsletter newsletter newsletter'
+    'connect connect connect connect connect connect'
+    'footer footer footer footer footer footer';
+}
+.gridcontainer .div-header {
+    grid-area: header;
+}
+.gridcontainer .div-intro-section {
+    grid-area: intro-section;
+}
+.gridcontainer .div-organic-section {
+    grid-area: organic-section;
+}
+.gridcontainer .div-story-section {
+    grid-area: story-section;
+}
+.gridcontainer .div-newsletter {
+    grid-area: newsletter;
+}
+.gridcontainer .div-connect {
+    grid-area: connect;
+}
+.gridcontainer .div-footer {
+    grid-area: footer;
+}
+
+header {
+    background-color: rgba(77,0,0);
+    padding: 10px;
+}
+header h1, h2 {
+    padding: 5px;
+}
+hr {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+h1 {
+    margin: 0;
+    color: rgb(233, 219, 203);
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    margin: 0;
+    color: rgb(77,0,0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-intro-banner, .img-dish-intro, .img-founder-story, .img-organic-beets {
+    max-width: 100vw;
+}
+
+.newsletter-container div {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
