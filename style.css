@@ -14,7 +14,7 @@ body {
 
 .gridcontainer {
     display: grid;
-    gap: 1px;
+    gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:
@@ -100,6 +100,79 @@ h2 {
 /* MEDIA QUERY FOR TABLET */
 @media (min-width: 601px) and (max-width: 1280px) { 
 
+    .gridcontainer {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'banner banner banner'
+            'intro-section intro-section intro-section'
+            'organic-section organic-section organic-section'
+            'story-section story-section story-section'
+            'newsletter newsletter newsletter'
+            'connect connect connect'
+            'footer footer footer';
+    }
+    .gridcontainer nav {
+        grid-area: nav;
+    }
+
+    .navbar {
+       margin: 0;
+       padding: 0;
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(77,0,0);
+        list-style-type: none;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+    .navbar ul li {
+        position: relative;
+       
+     
+    }
+    .navbar ul li:hover {
+        background-color: rgb(108, 27, 54);
+    }
+    .navbar ul li a {
+        color: rgb(233, 219, 203);
+        text-decoration: none;
+        width: 100%;
+        padding-left: 20px;
+            padding-right: 20px;
+    }
+        
+    .navbar ul li ul {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+        position: absolute;
+        justify-content: flex-start;
+        max-width: 100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+        .navbar ul li:hover > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+    .navbar ul li ul li {
+        width: 100%;
+        background-color: rgb(77,0,0);
+    }
+
     .img-intro-banner, .img-dish-intro, .img-founder-story, .img-organic-beets {
         max-width: 40vw;
     }
@@ -157,6 +230,7 @@ h2 {
      float: left;
       max-height: 100%;
     }   
+
 }
 
 
