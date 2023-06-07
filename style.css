@@ -15,19 +15,23 @@ body {
 .gridcontainer {
     display: grid;
     gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:
-    'header header header header header header'
-    'intro-section intro-section intro-section intro-section intro-section intro-section'
-    'organic-section organic-section organic-section organic-section organic-section organic-section'
-    'story-section story-section story-section story-section story-section story-section'
-    'newsletter newsletter newsletter newsletter newsletter newsletter'
-    'connect connect connect connect connect connect'
-    'footer footer footer footer footer footer';
+    'header header header'
+    'banner banner banner'
+    'intro-section intro-section intro-section'
+    'organic-section organic-section organic-section'
+    'story-section story-section story-section'
+    'newsletter newsletter newsletter'
+    'connect connect connect'
+    'footer footer footer';
 }
 .gridcontainer .div-header {
     grid-area: header;
+}
+.gridcontainer .div-intro-banner {
+    grid-area: banner
 }
 .gridcontainer .div-intro-section {
     grid-area: intro-section;
@@ -48,12 +52,21 @@ body {
     grid-area: footer;
 }
 
+
+
+
+
 header {
     background-color: rgba(77,0,0);
-    padding: 10px;
+    padding: 5px;
 }
 header h1, h2 {
+    color: rgb(233, 219, 203);
     padding: 5px;
+}
+
+.header-book-now {
+    color: rgb(233, 219, 203);
 }
 hr {
     margin-left: 25%;
@@ -83,3 +96,72 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* MEDIA QUERY FOR TABLET */
+@media (min-width: 601px) and (max-width: 1280px) { 
+
+    .img-intro-banner, .img-dish-intro, .img-founder-story, .img-organic-beets {
+        max-width: 40vw;
+    }
+    
+    .div-intro-section section {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    .div-intro-section div {
+        max-width: auto;
+        font-size: 0.8em;
+    }
+    .div-intro-section img {
+        float: right;
+        max-height: 100%;
+    }
+
+
+    .div-organic-section section {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        flex-direction: row-reverse;
+    }
+    
+    .div-organic-section div {
+        max-width: auto;
+        font-size: 0.8em;
+    }
+    
+    .div-organic-section img {
+        float: left;
+        max-height: 100%;
+    }
+
+    .div-story-section section {
+        display: flex;
+       flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+    }
+
+    .div-story-section div {
+      max-width: auto;
+      font-size: 0.8em;
+    }
+
+    .div-story-section img {
+     float: left;
+      max-height: 100%;
+    }   
+}
+
+
+
+/* MEDIA QUERY FOR DESKTOP */
+/* @media (min-width: 1280px) {
+    
+} */
