@@ -10,12 +10,16 @@ body {
 * {
     text-align: center;
     text-transform: lowercase;
+    color: rgb(77,0,0);
+}
+p {
+    padding: 0;
 }
 
 .gridcontainer {
     display: grid;
     gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:
     'header header header'
@@ -68,10 +72,7 @@ header h1, h2 {
 .header-book-now {
     color: rgb(233, 219, 203);
 }
-hr {
-    margin-left: 25%;
-    margin-right: 25%;
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 h1 {
@@ -89,13 +90,47 @@ h2 {
     max-width: 100vw;
 }
 
-.newsletter-container div {
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+button {
+    padding: 0;
+    font-weight: bold;
 }
+button p {
+    font-family: 'Montserrat', sans-serif;
+        padding: 6px
+        margin: 0;
+}
+
+
+.div-newsletter section p {
+    margin: 0
+}
+.div-newsletter {
+    margin: 4vh;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+/* .newsletter-container div {
+    margin: 5px;
+} */
+
+input[type="submit"] {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul li a {
+    text-decoration: none;
+}
+
 
 /* MEDIA QUERY FOR TABLET & DESKTOP */
 @media (min-width: 601px) { 
@@ -103,7 +138,7 @@ h2 {
     .gridcontainer {
         display: grid;
         gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto auto 30vh auto auto auto auto auto;
         grid-template-areas:
             'header header header'
@@ -157,7 +192,6 @@ header {
     .navbar ul li a {
         color: rgb(233, 219, 203);
         text-decoration: none;
-        width: 100%;
         padding: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -213,7 +247,7 @@ header {
     .div-intro-section section {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         
@@ -231,7 +265,7 @@ header {
     .div-organic-section section {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         flex-direction: row-reverse;
@@ -250,7 +284,7 @@ header {
     .div-story-section section {
         display: flex;
        flex-wrap: nowrap;
-      justify-content: space-around;
+    justify-content: space-between;
       align-items: center;
       position: relative;
     }
@@ -276,6 +310,10 @@ header {
         font-size: 1.3em;
         padding-left: 50px;
         padding-right: 50px
+    }
+    button p {
+        padding: 6px;
+        margin: 0;
     }
     
 }
