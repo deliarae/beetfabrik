@@ -189,6 +189,11 @@ h2 {
     section {
         z-index: 2;
         background-color: rgb(233, 219, 203);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    section div {
+        padding: 10px;
     }
 
    .img-dish-intro, .img-founder-story, .img-organic-beets {
