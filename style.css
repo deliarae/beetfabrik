@@ -97,14 +97,14 @@ h2 {
     align-items: center;
 }
 
-/* MEDIA QUERY FOR TABLET */
-@media (min-width: 601px) and (max-width: 1280px) { 
+/* MEDIA QUERY FOR TABLET & DESKTOP */
+@media (min-width: 601px) { 
 
     .gridcontainer {
         display: grid;
         gap: 0px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto 30vh auto auto auto auto auto;
         grid-template-areas:
             'header header header'
             'nav nav nav'
@@ -137,12 +137,11 @@ h2 {
     }
     .navbar ul li {
         position: relative;
-       
-     
     }
     .navbar ul li:hover {
         background-color: rgb(108, 27, 54);
     }
+
     .navbar ul li a {
         color: rgb(233, 219, 203);
         text-decoration: none;
@@ -152,7 +151,6 @@ h2 {
     }
         
     .navbar ul li ul {
-        
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -173,7 +171,19 @@ h2 {
         background-color: rgb(77,0,0);
     }
 
-    .img-intro-banner, .img-dish-intro, .img-founder-story, .img-organic-beets {
+
+    .img-intro-banner {
+        z-index: -1;
+        position: relative;
+        bottom: 90px;
+    }
+
+    section {
+        z-index: 2;
+        background-color: rgb(233, 219, 203);
+    }
+
+   .img-dish-intro, .img-founder-story, .img-organic-beets {
         max-width: 40vw;
     }
     
@@ -183,6 +193,7 @@ h2 {
         justify-content: space-around;
         align-items: center;
         position: relative;
+        
     }
     .div-intro-section div {
         max-width: auto;
