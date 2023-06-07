@@ -119,7 +119,9 @@ h2 {
     .gridcontainer nav {
         grid-area: nav;
     }
-
+header {
+    padding: 0;
+}
     .nav-container {
         width: 100vw;
         position: sticky;
@@ -145,6 +147,7 @@ h2 {
     }
     .navbar ul li {
         position: relative;
+        transition: all 0.5s ease;
     }
     .navbar ul li:hover {
         background-color: rgb(108, 27, 54);
@@ -155,7 +158,7 @@ h2 {
         text-decoration: none;
         width: 100%;
         padding-left: 20px;
-            padding-right: 20px;
+        padding-right: 20px;
     }
         
     .navbar ul li ul {
@@ -169,13 +172,15 @@ h2 {
         max-width: 100%;
         visibility: hidden;
         opacity: 0;
+        transition: all 0.5s ease;
     }
         .navbar ul li:hover > ul {
             visibility: visible;
             opacity: 1;
         }
     .navbar ul li ul li {
-        width: 100%;
+        text-align: left;
+        width: 300%;
         background-color: rgb(77,0,0);
     }
 
@@ -259,7 +264,13 @@ h2 {
 
 
 
-/* MEDIA QUERY FOR DESKTOP */
-/* @media (min-width: 1280px) {
+/* MEDIA QUERY FOR DESKTOP  */
+
+@media (min-width: 1280px) {
+    section p {
+        font-size: 1.3em;
+        padding-left: 50px;
+        padding-right: 50px
+    }
     
-} */
+}
