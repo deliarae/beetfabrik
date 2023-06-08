@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="application-form.css" />
+  </head>
+  <body>
+    <!-- needs to contain: radio buttons, checkboxes, file upload input, textarea, and dropdown list -->
+    
+    <div class="container">
+    <h2>Job Application Form</h2>
+
+    <p>
+      You're here because you're interested in working with us. Amazing! First,
+      we need to know a few things about you, so to get started, we ask you to
+      please fill in our application form.
+    </p>
+    <form action="./form-submitted.html">
+      <fieldset>
+        <legend>Personal info</legend>
+        <label for="name"><strong>Full name:</strong></label>
+
+        <input id="name" type="text" required />
+
+        <!-- checkboxes -->
+        <br />
+
+        <label for="pronouns"><strong>Pronouns</strong></label
+        ><br />
+        <input id="pronouns" type="checkbox" name="pronouns" /> He/Him <br />
+        <input id="pronouns" type="checkbox" name="pronouns" /> She/Her <br />
+        <input id="pronouns" type="checkbox" name="pronouns" /> They/Them <br />
+        <input id="pronouns" type="checkbox" name="pronouns" /> Prefer not to say <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Job-related info</legend>
+        <!-- radio buttons -->
+
+        <label><strong>Which job role are you applying for?</strong></label
+        ><br />
+        <input
+          type="radio"
+          id="chef"
+          value="chef"
+          name="userName"
+        /><label for="chef">Chef</label><br />
+        <input
+          type="radio"
+          id="waiter"
+          value="waiter"
+          name="userName"
+        /><label for="waiter">Waiter/Waitress</label><br />
+        <input
+          type="radio"
+          id="food-runner"
+          value="food-runner"
+          name="userName"
+        /><label for="food-runner">Food & Drinks Runner</label><br />
+
+        <input
+          type="radio"
+          id="general-manager"
+          value="general-manager"
+          name="userName"
+        /><label for="general-manager">General Manager</label>
+        <br />
+
+        <!-- file upload -->
+
+        <label for="cv"><strong>Upload your CV</strong></label> <br />
+        <input id="cv" type="file" required />
+
+        <!-- textarea -->
+        <br />
+        <label for="message"
+          ><strong>Tell us a little bit about yourself!</strong></label
+        ><br />
+        <textarea id="message" name="textarea" rows="4" cols="50" placeholder="Why would you like to work for us?"  onfocus="this.placeholder=''" 
+           onblur="this.placeholder='Why would you like to work for us?'">
+</textarea
+        >
+
+        <br />
+
+        <!-- dropdown -->
+        <label for="channel"><strong>How did you hear about us?</strong></label>
+        <br />
+        <select id="channel" name="channel">
+          <option disabled selected option>Select an Option</option>
+          <option value="instagram">Instagram</option>
+          <option value="job-portal">Job Portal</option>
+          <option value="web-search">Web Search</option>
+          <option value="recruitment-agent">Recruitment Agent</option>
+          <option value="other">Other</option></select
+        ><br />
+      </fieldset>
+      <input type="submit" class="spacing" />
+
+      <p>We look forward to hearing from you!</p>
+      </div>
+    </form>
+  </body>
+</html>
