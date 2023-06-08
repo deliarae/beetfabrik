@@ -100,25 +100,24 @@ h2 {
 }
 
 button {
-    padding: 0;
+    padding: 5px;
     font-weight: bold;
+    border: 1px solid rgb(77, 0, 0);
+    border-radius: 20px;
     margin-bottom: 10px;
     background-color: rgb(233, 219, 203);
-    
     transition: all 0.5s ease;
     cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(108, 27, 54);
-    
 }
 button:hover p {
     color: rgb(233, 219, 203);
 }
 button p {
     font-family: 'Montserrat', sans-serif;
-        padding: 6px;
         margin: 0;
         color: rgb(77, 0, 0);
 }
@@ -142,13 +141,22 @@ button p {
     margin: 2vh;
 }
 .newsletter-container div {
-    margin: 5px;
+    margin: 0px;
 }
 
-input[type="submit"] {
-    padding: 10px;
+input[type="text"], input[type="email"] {
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px black solid;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+/* input[type="submit"] {
+    padding: 6px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+} */
 
 .div-social-media-logos {
     display: flex;
