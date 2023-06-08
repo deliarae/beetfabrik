@@ -27,6 +27,7 @@ p {
     'intro-section intro-section intro-section'
     'organic-section organic-section organic-section'
     'story-section story-section story-section'
+    'career-section career-section career-section'
     'newsletter newsletter newsletter'
     'connect connect connect'
     'footer footer footer';
@@ -45,6 +46,9 @@ p {
 }
 .gridcontainer .div-story-section {
     grid-area: story-section;
+}
+.gridcontainer .div-career-section {
+    grid-area: career-section;
 }
 .gridcontainer .div-newsletter {
     grid-area: newsletter;
@@ -94,11 +98,24 @@ button {
     padding: 0;
     font-weight: bold;
     margin-bottom: 10px;
+    background-color: rgb(233, 219, 203);
+    
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(77, 0, 0);
+    
+}
+button:hover p {
+    color: rgb(233, 219, 203);
 }
 button p {
     font-family: 'Montserrat', sans-serif;
         padding: 6px;
         margin: 0;
+        color: rgb(77, 0, 0);
 }
 
 
@@ -149,6 +166,7 @@ footer ul li a {
             'intro-section intro-section intro-section'
             'organic-section organic-section organic-section'
             'story-section story-section story-section'
+            'career-section career-section career-section'
             'newsletter newsletter newsletter'
             'connect connect connect'
             'footer footer footer';
@@ -300,6 +318,25 @@ header {
      float: left;
       max-height: 100%;
     }   
+
+        .div-career-section section {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            flex-direction: row-reverse;
+        }
+    
+        .div-career-section div {
+            max-width: auto;
+            font-size: 0.8em;
+        }
+    
+        .div-career-section img {
+            float: left;
+            max-height: 100%;
+        }
 
 }
 
