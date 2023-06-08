@@ -150,6 +150,21 @@ input[type="submit"] {
     font-family: 'Montserrat', sans-serif;
 }
 
+.div-social-media-logos {
+    display: flex;
+    justify-content: center;
+    margin: 10px
+}
+.social-media-logos {
+    max-height: 5vh;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.logo-bottom-of-homepage {
+    font-size: 2.5rem;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
@@ -184,6 +199,7 @@ footer ul li a {
     }
 header {
     padding: 0;
+    z-index: 100;
 }
 
     .nav-container {
@@ -253,10 +269,16 @@ header {
     }
 
 
+    header {
+        z-index: 10;
+    }
     .img-intro-banner {
-        z-index: -1;
         position: relative;
-        bottom: 140px;
+        bottom: 120px;
+        
+    }
+    .div-intro-banner {
+        overflow: hidden;
     }
 
     section {
@@ -350,10 +372,11 @@ header {
             max-height: 100%;
         }
 
+
+.social-media-logos:hover {
+    transform: scale(1.4);
 }
-
-
-
+}
 /* MEDIA QUERY FOR DESKTOP  */
 
 @media (min-width: 1280px) {
