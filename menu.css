@@ -35,7 +35,9 @@ table tr {
 
     justify-content: space-between;
 }
-
+table tr:nth-child(2n-1) {
+    background-color: rgb(234, 214, 191);
+}
 
 @media (min-width: 801px) {
     .menu-container {
