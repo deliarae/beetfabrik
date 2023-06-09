@@ -3,21 +3,26 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./beets-intro-banner-2.jpg);
+    /* background-image: url(./beets-intro-banner-2.jpg); */
 }
 
 @keyframes my-animation {
-    0% { background-color: rgb(233, 219, 203);}
-    20% {background-color: rgb(211, 105, 139);}
-    40% {background-color: rgb(165, 41, 81);}
-    60% {background-color: rgb(77, 0, 0);}
-    80% {background-color: rgb(165, 41, 81);}
-    100% {background-color: rgb(233, 219, 203);}
+    0% { background-color: rgb(235, 194, 209);}
+    20% {background-color: rgb(211, 105, 139);
+        transform: rotate(180deg);}
+    40% {background-color: rgb(165, 41, 81);
+        
+    transform: rotate(360deg);}
+    60% {background-color: rgb(77, 0, 0);
+        transform: rotate(180deg);}
+    80% {background-color: rgb(165, 41, 81);transform: scale(2);}
+    100% {background-color: rgb(235, 194, 209);}
 }
 
 .under-construction {
-    background-color: rgb(233, 219, 203);
+    background-color: rgb(235, 194, 209);
     font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 240, 236);
     font-size: 2rem;
     max-width: 300px;
     padding: 20px;
