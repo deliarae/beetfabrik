@@ -211,7 +211,6 @@ header {
 }
 
     .nav-container {
-        width: 100vw;
         position: sticky;
         top: 0px;
         z-index: 10;

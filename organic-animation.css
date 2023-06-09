@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./beets-intro-banner-2.jpg);
+}
+
+@keyframes my-animation {
+    0% { background-color: rgb(233, 219, 203);}
+    20% {background-color: rgb(211, 105, 139);}
+    40% {background-color: rgb(165, 41, 81);}
+    60% {background-color: rgb(77, 0, 0);}
+    80% {background-color: rgb(165, 41, 81);}
+    100% {background-color: rgb(233, 219, 203);}
+}
+
+.under-construction {
+    background-color: rgb(233, 219, 203);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    margin-top: 40vh;
+}

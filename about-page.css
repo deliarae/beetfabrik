@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./beets-intro-banner-2.jpg);
+    background-size: cover;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    padding: 10px;
+}
+.container {
+    background-color: rgb(233, 219, 203);
+    margin: 50px auto;
+    padding: 30px;
+    width: 70vw;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 20%;
+    max-width: 120px;
+    min-width: 100px;
+    float: right;
+    padding:10px;
+    font-style: italic;
+}
