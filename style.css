@@ -137,7 +137,7 @@ h2 {
 }
 
 button {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     font-weight: bold;
     border: 1px solid var(--red-color);
     border-radius: 20px;
@@ -145,11 +145,11 @@ button {
     background-color: rgb(233, 219, 203);
     transition: all 0.5s ease;
     cursor: pointer;
-    box-shadow: -3px 3px 10px;
+    box-shadow: -1px 1px 10px;
 }
 
 button:hover {
-    background-color: rgb(108, 27, 54);
+    background-color: var(--red-color);
 }
 button:hover p {
     color: rgb(233, 219, 203);
@@ -416,6 +416,15 @@ header {
             float: left;
             max-height: 100%;
         }
+
+.newsletter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+        
 .logo-bottom-of-homepage {
     font-size: 2.5rem;
 }

@@ -34,4 +34,6 @@ aside {
     float: right;
     padding:10px;
     font-style: italic;
+    border: 1px solid;
+    margin-left: 10px;
 }
